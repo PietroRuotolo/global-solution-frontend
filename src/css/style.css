@@ -5,6 +5,7 @@
     --cor3: #f0f0f0;
     --cor4: #333333;
     font-family: 'Cascadia Code', sans-serif;
+    --font-family2: 'Orbitron';
 }
 
 /* Seletores universais */
@@ -84,6 +85,31 @@ nav ul li{
     .open span:nth-child(1){transform:rotate(45deg)translate(5px,5px);}
     .open span:nth-child(2){opacity:0}
     .open span:nth-child(3){transform:rotate(-45deg)translate(7px,-7px);}
+}
+
+
+#hero-section {
+    background-image: url("../assets/banner-do-projeto.png");
+    height: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20rem;
+    box-shadow: 0 0 200px rgba(0, 0, 0,.4);
+
+    text-align: center;
+    font-family: var(--font-family2);
+    color: var(--cor3);
+    text-shadow: 0 0 10px rgba(0, 150, 255, .5);
+    letter-spacing: 2px;
+}
+
+#titulo-banner{
+    transform: translateY(-60px);
+}
+
+#subtitulo-banner{
+    transform: translateY(200px);
 }
 
 footer{
