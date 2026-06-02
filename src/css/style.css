@@ -1,0 +1,95 @@
+/* Paleta de cores */
+:root{
+    --cor1: #ee520a;
+    --cor2: #181717;
+    --cor3: #f0f0f0;
+    --cor4: #333333;
+    font-family: 'Cascadia Code', sans-serif;
+}
+
+/* Seletores universais */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: var(--cor2);
+    color: var(--cor3);
+    padding: 35px;
+    align-items: center;
+    display: flex;
+}
+
+#logo{
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: auto;
+}
+
+h1 span{
+    color: var(--cor1);
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* Menu Hamburger */
+.menu-hamburger{
+    display:none;
+    flex-direction:column;
+    justify-content:space-around;
+    width:30px;
+    height:25px;
+    cursor:pointer;
+    z-index:1001;
+    margin-left: auto;
+}
+
+.menu-hamburger span {
+    width:100%;
+    height:3px;
+    background:var(--cor1);
+    border-radius:10px;
+}
+
+@media {
+    .menu-hamburger{
+        display:flex;
+
+    }
+    nav{
+        display:none;
+        position:absolute;
+        top: 120px;
+        left:0;
+        margin-left:20%;
+        width:70%;
+        border-radius:40px;
+        background:var(--cor2);
+        flex-direction:column;
+        padding:20px 0;
+    }
+    nav.active{
+        display:block;
+    }
+    nav ul{
+        flex-direction:column;
+        text-align:center;
+    }
+    .open span:nth-child(1){transform:rotate(45deg)translate(5px,5px);}
+    .open span:nth-child(2){opacity:0}
+    .open span:nth-child(3){transform:rotate(-45deg)translate(7px,-7px);}
+}
+
+footer{
+    background-color: var(--cor1);
+    color: var(--cor3);
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
