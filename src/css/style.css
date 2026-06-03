@@ -91,7 +91,6 @@ nav ul li{
 
 #hero-section {
     background-image: url("../assets/banner-do-projeto.png");
-    position: relative;
     height: 10px;
     background-repeat: no-repeat;
     background-size: cover;
