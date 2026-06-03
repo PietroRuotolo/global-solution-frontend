@@ -14,27 +14,33 @@ document.addEventListener("DOMContentLoaded",()=>{
 const pages = [
     {
         id: 1, // Page 1
-        nome: "Problema Abordado"
+        nome: "Problema Abordado",
+        path: "/pages/problema-abordado.html"
     },
     {
         id:2,  // Page 2
-        nome: "Tecnologias Utilizadas"
+        nome: "Tecnologias Utilizadas",
+        path: "/pages/tecnologias.html"
     },
     {
         id:3,  // Page 3
-        nome: "Objetivos do Projeto"
+        nome: "Objetivos do Projeto",
+        path: "/pages/objetivos.html"
     },
     {
         id:4,  // Page 4
-        nome: "Público Alvo"
+        nome: "Público Alvo",
+        path: "/pages/publico-alvo.html"
     },
     {
         id:5,  // Page 5
-        nome: "Benefícios do Projeto"
+        nome: "Benefícios do Projeto",
+        path: "/pages/beneficios.html"
     },
     {
         id:6,  // Page 6
-        nome: "Aplicação do Projeto"
+        nome: "Aplicação do Projeto",
+        path: "/pages/aplicacao.html"
     }
 ]
 
@@ -50,7 +56,11 @@ const listaPages = document.getElementById("lista-pages")
 pages.forEach((page) => {
     listaPages.innerHTML += `
         <div class="card">
-            <h2>${page.nome}</h2>
+            <l1 class = "pagina">
+                <a href="${page.path}">
+                    ${page.nome}
+                </a>
+            </li>
         </div>    
     `;
 });
