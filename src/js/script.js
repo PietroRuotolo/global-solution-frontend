@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded",()=>{
                 menuIcone.classList.toggle("open");
         }
     }
-})
+});
 
 // DOM no main para listar Pages 
 const pages = [
@@ -53,14 +53,16 @@ pages.forEach((page) => {
 
 const listaPages = document.getElementById("lista-pages")
 
-pages.forEach((page) => {
-    listaPages.innerHTML += `
-        <div class="card">
-            <l1 class = "pagina">
-                <a href="${page.path}">
-                    ${page.nome}
-                </a>
-            </li>
-        </div>    
-    `;
-});
+if (listaPages) {
+    pages.forEach((page) => {
+        listaPages.innerHTML += `
+            <div class="card">
+                <li class="pagina">
+                    <a href="${page.path}">
+                        ${page.nome}
+                    </a>
+                </li>
+            </div>
+        `;
+    });
+}
