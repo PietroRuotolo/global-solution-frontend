@@ -136,6 +136,30 @@ nav ul li{
     background: var(--cor5);
 }
 
+#lista-pages{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 64px;
+}
+
+.card{
+    background-color: var(--cor3);
+    width: 250px;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15)
+}
+
+.card:hover{
+    background-color: var(--cor1);
+    color: var(--cor3)
+}
+.card h2{
+    margin-top: 0;
+}
+
 footer{
     background-color: var(--cor1);
     color: var(--cor3);
