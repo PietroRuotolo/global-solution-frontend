@@ -47,6 +47,10 @@ nav ul li{
     margin-left: 20px;
 }
 
+a{
+    text-decoration: none;
+}
+
 /* Menu Hamburger */
 .menu-hamburger{
     display:none;
@@ -64,6 +68,15 @@ nav ul li{
     height:3px;
     background:var(--cor1);
     border-radius:10px;
+}
+
+.menu-hamburger-direcionamento{
+    color: var(--cor3);
+    font-size: 20px;;
+}
+
+.menu-hamburger-direcionamento:hover{
+    color: var(--cor1);
 }
 
 @media (min-width: 100px) {
@@ -164,16 +177,16 @@ nav ul li{
 }
 
 .card{
-    background-color: var(--cor3);
+    background-color: var(--cor1);
     width: 250px;
     padding: 16px;
-    border-radius: 8px;
+    border-radius: 30px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15)
 }
 
 .card:hover{
     background-color: var(--cor1);
-    color: var(--cor3)
+    color: var(--cor1)
 }
 .card h2{
     margin-top: 0;
@@ -183,13 +196,13 @@ nav ul li{
     list-style: none;
 }
 
-a{
+.link-pagina{
     text-decoration: none;
     font-size: 25px;
     color: var(--cor4);
 }
 
-a:hover{
+.link-pagina:hover{
     color: var(--cor2);
 }
 

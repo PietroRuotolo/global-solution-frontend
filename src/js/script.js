@@ -61,13 +61,13 @@ if (listaPages) {
         listaPages.innerHTML += `
             <div class="card">
                 <li class="pagina">
-                    <a href="${page.path}">
+                    <a class="link-pagina" href="${page.path}">
                         ${page.nome}
                     </a>
                 </li>
             </div>
         `;
-    });
+    })
 }
 
 // --- LÓGICA DO SLIDESHOW ---
