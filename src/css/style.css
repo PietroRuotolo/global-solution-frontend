@@ -30,6 +30,13 @@ header{
     margin-left: auto;
 }
 
+#logo a {
+    text-decoration: none;
+    color: var(--cor3);
+    font-size: inherit;
+    font-weight: inherit;
+}
+
 h1 span{
     color: var(--cor1);
 }
@@ -192,4 +199,69 @@ footer{
     text-align: center;
     padding: 20px;
     margin-top: 20px;
+}
+
+/* --- ESTILOS DO SLIDESHOW --- */
+.slideshow-container { 
+    position: relative; 
+    width: 100%; 
+    max-width: 800px; /* Limita a largura máxima para não ficar gigante em telas grandes */
+    margin: 30px auto; 
+    text-align: center; 
+    background-color: #eaeaea; 
+    border-radius: 8px; 
+    padding: 20px 0; 
+}
+
+.slide-img { 
+    width: 90%; 
+    height: 400px; /* Altura fixa garante o mesmo retângulo para todas as imagens */
+    object-fit: cover; /* Preenche o retângulo sem distorcer a imagem */
+    border-radius: 8px; 
+    display: none; 
+    margin: 0 auto; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Um pequeno sombreamento para destacar a imagem */
+}
+
+.slide-img.active { 
+    display: block; 
+}
+
+/* Controles do botão */
+.controles { 
+    margin-top: 15px; 
+}
+
+.controles button { 
+    background-color: #0a192f; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    margin: 0 10px; 
+    cursor: pointer; 
+    border-radius: 4px; 
+    font-weight: bold; 
+    transition: 0.3s; 
+}
+
+.controles button:hover { 
+    background-color: #e5a910; 
+    color: #0a192f; 
+}
+
+.container {
+    max-width: 800px; 
+    margin: 40px auto; 
+    padding: 0 20px;  
+}
+
+.container ul{
+    list-style: disc; 
+    margin-left: 20px; 
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.container ul li{
+    margin-bottom: 8px;
 }
