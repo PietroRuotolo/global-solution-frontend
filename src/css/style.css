@@ -79,6 +79,10 @@ a{
     color: var(--cor1);
 }
 
+#pagina-selecionada{
+    color: var(--cor1);
+}
+
 @media (min-width: 100px) {
 
     .menu-hamburger{
