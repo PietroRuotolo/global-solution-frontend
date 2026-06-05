@@ -219,6 +219,10 @@ footer{
 
 /* Pages Estilo */
 
+span{
+    color: var(--cor1);
+    font-weight: bold;
+}
 
 #subtitulos{
     color: var(--cor1);
