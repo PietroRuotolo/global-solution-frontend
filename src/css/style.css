@@ -71,11 +71,15 @@ a{
 }
 
 .menu-hamburger-direcionamento{
-    color: var(--cor3);
-    font-size: 20px;;
+    color: var(--cor4);
+    font-size: 20px;
 }
 
 .menu-hamburger-direcionamento:hover{
+    color: var(--cor1);
+}
+
+#pagina-selecionada{
     color: var(--cor1);
 }
 
@@ -91,7 +95,7 @@ a{
         position:absolute;
         top:140px;
         left:0;
-        margin-left:20%;
+        margin-left:16%;
         width:70%;
         border-radius:40px;
         background:var(--cor2);
@@ -177,7 +181,7 @@ a{
 }
 
 .card{
-    background-color: var(--cor1);
+    background-color: var(--cor3);
     width: 250px;
     padding: 16px;
     border-radius: 30px;
@@ -186,7 +190,6 @@ a{
 
 .card:hover{
     background-color: var(--cor1);
-    color: var(--cor1)
 }
 .card h2{
     margin-top: 0;
@@ -258,8 +261,8 @@ footer{
 }
 
 .controles button:hover { 
-    background-color: #e5a910; 
-    color: #0a192f; 
+    background-color: var(--cor1); 
+    color: var(--cor3); 
 }
 
 .container {
