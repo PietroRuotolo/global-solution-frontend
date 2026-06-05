@@ -217,6 +217,25 @@ footer{
     margin-top: 20px;
 }
 
+/* Pages Estilo */
+
+
+#subtitulos{
+    color: var(--cor1);
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.paragrafos{
+    color: var(--cor4);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
 /* --- ESTILOS DO SLIDESHOW --- */
 .slideshow-container { 
     position: relative; 
