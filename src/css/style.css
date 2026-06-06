@@ -304,3 +304,18 @@ span{
 .container ul li{
     margin-bottom: 8px;
 }
+
+#aplicacoes{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 15px;
+    margin: 10px;
+}
+
+#titulo-aplicacoes{
+    text-align: center;
+    color: var(--cor1);
+    padding: 8px;
+}
