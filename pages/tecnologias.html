@@ -21,15 +21,35 @@
                 <li><a class="menu-hamburger-direcionamento" href="./problema-abordado.html">Problema Abordado</a></li>
                 <li><a class="menu-hamburger-direcionamento" id="pagina-selecionada" href="./tecnologias.html">Tecnologias Utilizadas</a></li>
                 <li><a class="menu-hamburger-direcionamento" href="./objetivos.html">Objetivos do Projeto</a></li>
-                <li><a class="menu-hamburger-direcionamento" href="./beneficios.html">Benfícios do Projeto</a></li>
+                <li><a class="menu-hamburger-direcionamento" href="./beneficios.html">Benefícios do Projeto</a></li>
                 <li><a class="menu-hamburger-direcionamento" href="./publico-alvo.html">Público Alvo</a></li>
                 <li><a class="menu-hamburger-direcionamento" href="./aplicacao.html">Aplicações do Projeto</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="container">
+        <h2 id="subtitulos">Tecnologias</h2>
+        <p class="paragrafos">O Plastic<span>Map</span> utiliza as seguintes tecnologias:</p>
+        <ul class="paragrafos">
+            <li>Python para processamento e análise de dados;</li>
+            <li>JavaScript e HTML/CSS para desenvolvimento da interface web e visualização de dashboards.</li>
+        </ul>
+    </main>
 
-        <footer>
+        <div class="slideshow-container" id="slides-tecnologias">
+            <img src="../src/assets/dashboard-tecnologias.jpg" class="slide-img active" alt="Imagem ilustrativa 1">
+            <img src="../src/assets/satelite-tecnologias.jpg" class="slide-img" alt="Imagem ilustrativa 3">
+            <img src="../src/assets/programacao-tecnologias.jpg" class="slide-img" alt="Imagem ilustrativa 2">
+            
+            <div class="controles">
+                <button class="btn-anterior">&#10094; Anterior</button>
+                <button class="btn-proximo">Próxima &#10095;</button>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <footer>
         <div>
             <h6>&copy; 2026 PlasticMap.</h6>
             <h4>Equipe:
@@ -46,7 +66,7 @@
             </h4>
         </div>
     </footer>
-
+    <script src="../src/js/tecnologia.js"></script>
     <script src="../src/js/script.js"></script>
 </body>
 </html>
