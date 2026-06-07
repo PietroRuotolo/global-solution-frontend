@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body>
+    <header>
+        <h1 id="logo"><a href="../index.html"> Plastic<span>Map</span></a></h1>
+        <!-- Menu Hamburger -->
+        <div class="menu-hamburger" id="menu-icone">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a class="menu-hamburger-direcionamento" href="./problema-abordado.html">Problema Abordado</a></li>
+                <li><a class="menu-hamburger-direcionamento" href="./tecnologias.html">Tecnologias Utilizadas</a></li>
+                <li><a class="menu-hamburger-direcionamento" href="./objetivos.html">Objetivos do Projeto</a></li>
+                <li><a class="menu-hamburger-direcionamento" href="./beneficios.html">Beneficios do Projeto</a></li>
+                <li><a class="menu-hamburger-direcionamento" href="./publico-alvo.html">Publico Alvo</a></li>
+                <li><a class="menu-hamburger-direcionamento" href="./aplicacao.html">Aplicacoes do Projeto</a></li>
+                <li><a class="menu-hamburger-direcionamento" id="pagina-selecionada" href="./dashboard.html">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="dashboard-container">
+        <section class="dashboard-topo">
+            <div>
+                <p class="dashboard-etiqueta">Simulacao do projeto</p>
+                <h1 id="titulo-dashboard">Dashboard Plastic<span>Map</span></h1>
+                <p class="paragrafos">
+                    Visualizacao demonstrativa de como o sistema pode acompanhar focos de microplasticos,
+                    rotas atmosfericas e regioes com maior risco ambiental.
+                </p>
+            </div>
+
+            <div class="dashboard-status">
+                <strong>Status</strong>
+                <span>Monitoramento ativo</span>
+                <small>Atualizacao simulada: 06/06/2026 - 16:30</small>
+            </div>
+        </section>
+
+        <section class="dashboard-cards">
+            <article class="dashboard-card">
+                <h2>124</h2>
+                <p>Pontos monitorados</p>
+            </article>
+
+            <article class="dashboard-card">
+                <h2>37%</h2>
+                <p>Risco medio global</p>
+            </article>
+
+            <article class="dashboard-card">
+                <h2>18</h2>
+                <p>Alertas preventivos</p>
+            </article>
+
+            <article class="dashboard-card">
+                <h2>5.240 km</h2>
+                <p>Rotas analisadas</p>
+            </article>
+        </section>
+
+        <section class="dashboard-grid">
+            <article class="painel-dashboard painel-mapa">
+                <div class="painel-titulo">
+                    <h2>Mapa de dispersao</h2>
+                    <span>America do Sul</span>
+                </div>
+
+                <div class="mapa-simulacao">
+                    <span class="ponto ponto-um"></span>
+                    <span class="ponto ponto-dois"></span>
+                    <span class="ponto ponto-tres"></span>
+                    <span class="rota rota-um"></span>
+                    <span class="rota rota-dois"></span>
+                    <p>Correntes atmosfericas simuladas</p>
+                </div>
+            </article>
+
+            <article class="painel-dashboard">
+                <div class="painel-titulo">
+                    <h2>Concentracao por regiao</h2>
+                    <span>ug/m3</span>
+                </div>
+
+                <div class="grafico-barras">
+                    <div>
+                        <span style="height: 64%"></span>
+                        <p>Sudeste</p>
+                    </div>
+                    <div>
+                        <span style="height: 42%"></span>
+                        <p>Sul</p>
+                    </div>
+                    <div>
+                        <span style="height: 78%"></span>
+                        <p>Norte</p>
+                    </div>
+                    <div>
+                        <span style="height: 51%"></span>
+                        <p>Nordeste</p>
+                    </div>
+                    <div>
+                        <span style="height: 35%"></span>
+                        <p>Centro</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="painel-dashboard">
+            <div class="painel-titulo">
+                <h2>Ultimos alertas da simulacao</h2>
+                <span>prioridade</span>
+            </div>
+
+            <table class="tabela-dashboard">
+                <thead>
+                    <tr>
+                        <th>Regiao</th>
+                        <th>Condicao</th>
+                        <th>Risco</th>
+                        <th>Acao sugerida</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Litoral Sudeste</td>
+                        <td>Ventos fortes levando particulas para o interior</td>
+                        <td><span class="risco alto">Alto</span></td>
+                        <td>Reforcar coleta costeira</td>
+                    </tr>
+                    <tr>
+                        <td>Amazonia</td>
+                        <td>Possivel deposicao por chuva</td>
+                        <td><span class="risco medio">Medio</span></td>
+                        <td>Acompanhar pluviometria</td>
+                    </tr>
+                    <tr>
+                        <td>Regiao Sul</td>
+                        <td>Baixa movimentacao atmosferica</td>
+                        <td><span class="risco baixo">Baixo</span></td>
+                        <td>Manter observacao</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <h6>&copy; 2026 PlasticMap.</h6>
+            <h4>Equipe:
+            <br>
+            Allan Rm:569534
+            <br>
+            Leonardo Scalisse Rm:569114
+            <br>
+            Valdemar Rm:573382
+            <br>
+            Pietro Schimidt Rm:570632
+            <br>
+            Danilo Rm:573831
+            </h4>
+        </div>
+    </footer>
+
+    <script src="../src/js/script.js"></script>
+</body>
+</html>
