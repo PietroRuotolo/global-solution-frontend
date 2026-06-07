@@ -54,6 +54,11 @@ const pages = [
         id: 6,  // Page 6
         nome: "Aplicação do Projeto",
         path: "/pages/aplicacao.html"
+    },
+    {
+        id: 7, //Page 7
+        nome: "Quiz",
+        path: "/pages/quiz.html"
     }
 ];
 

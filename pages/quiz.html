@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body>
+    <header>
+        <h1 id="logo"><a href="../index.html"> Plastic<span>Map</span></a></h1>
+        <div class="menu-hamburger" id="menu-icone">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a class="menu-hamburger-direcionamento" href="./problema-abordado.html">Problema Abordado</a></li>
+                <li><a class="menu-hamburger-direcionamento" href="./tecnologias.html">Tecnologias Utilizadas</a></li>
+                <li><a class="menu-hamburger-direcionamento" href="./objetivos.html">Objetivos do Projeto</a></li>
+                <li><a class="menu-hamburger-direcionamento" href="./beneficios.html">Benefícios do Projeto</a></li>
+                <li><a class="menu-hamburger-direcionamento" href="./publico-alvo.html">Público Alvo</a></li>
+                <li><a class="menu-hamburger-direcionamento" href="./aplicacao.html">Aplicações do Projeto</a></li>
+                <li><a class="menu-hamburger-direcionamento" id="pagina-selecionada" href="./quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-quiz">
+        <h1 class="quiz-titulo">Quiz PlasticMap</h1>
+        <p class="quiz-desc">
+            10 perguntas sobre microplásticos, dispersão atmosférica e monitoramento espacial.
+        </p>
+
+        <section id="quiz-area">
+
+        <div class="area-progresso">
+            <div class="progresso">
+                <div class="barra-progresso" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="10">
+            <div class="preenche-progresso" id="prog"></div>
+        </div>
+            <span class="progresso-texto" id="prog-text">1 / 10</span>
+        </div>
+
+        <div class="q-card" id="q-card">
+            <div class="q-num" id="q-num">Pergunta 1 de 10</div>
+            <p class="q-text" id="q-text"></p>
+
+            <fieldset class="opcoes" id="opc" aria-label="Opções de resposta">
+            <legend class="validacao">Escolha uma opção</legend>
+            </fieldset>
+
+            <p class="mensagem-erro hidden" id="mensagem-erro" role="alert" aria-live="polite">
+            <span aria-hidden="true">&#9888;</span>
+            Selecione uma resposta antes de continuar.
+            </p>
+        </div>
+
+        <div class="nav-btns">
+            <button class="btn-prev" id="btn-prev" onclick="prevQ()" aria-label="Pergunta anterior">
+            &#8592; Anterior
+            </button>
+            <button class="btn-next" id="btn-next" onclick="nextQ()" aria-label="Próxima pergunta">
+            Próxima &#8594;
+            </button>
+        </div>
+        </section>
+
+        <section id="area-resultado" class="hidden" aria-label="Resultado do quiz">
+        <div class="resultado-card">
+            <div class="resultado-estrelas" id="resultado-estrelas" aria-hidden="true"></div>
+            <div class="resultado-pontuacao" id="resultado-pontuacao"></div>
+            <div class="resultado-label" id="resultado-label"></div>
+            <div class="resultado-metricas">
+            <div class="rm-card">
+                <span class="rm-val sucesso" id="rm-correto">0</span>
+                <span class="rm-sumario">corretas</span>
+            </div>
+            <div class="rm-card">
+                <span class="rm-val perigo" id="rm-errado">0</span>
+                <span class="rm-sumario">erradas</span>
+            </div>
+            <div class="rm-card">
+                <span class="rm-val" id="rm-pct">0%</span>
+                <span class="rm-sumario">aproveitamento</span>
+            </div>
+            </div>
+            <p class="resultado-mensagem" id="resultado-mensagem"></p>
+            <div class="gabarito hidden" id="gabarito">
+            <div class="gabarito-titulo">Respostas corretas</div>
+            <div id="gabarito-lista"></div>
+            </div>
+            <button class="btn-novamente" onclick="resetQuiz()" aria-label="Tentar novamente">
+            &#8635; Tentar novamente
+            </button>
+        </div>
+        </section>
+  </main>
+
+    <footer>
+        <div>
+            <h6>&copy; 2026 PlasticMap.</h6>
+            <h4>Equipe:
+            <br>
+            Allan Rm:569534
+            <br>
+            Leonardo Scalisse Rm:569114
+            <br>
+            Valdemar Rm:573382
+            <br>
+            Pietro Schimidt Rm:570632
+            <br>
+            Danilo Rm:573831
+            </h4>
+        </div>
+    </footer>
+    <script src="../src/js/quiz.js"></script>
+</body>
+</html>
