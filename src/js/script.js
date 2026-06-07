@@ -1,3 +1,15 @@
+// --- HERO ---
+
+window.onload = function(){
+    setTimeout(() => {
+    document.getElementById("inicio").style.opacity = "0";
+
+    setTimeout(() => {
+        document.getElementById("inicio").style.display = "none";
+    }, 2000);
+}, 2000);
+}
+
 // --- LÓGICA DO MENU HAMBURGUER ---
 document.addEventListener("DOMContentLoaded", () => {
     const menuIcone = document.getElementById("menu-icone");
