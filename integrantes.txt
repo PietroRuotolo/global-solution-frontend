@@ -1,0 +1,7 @@
+Allan Ragazzo Rm:569534
+Leonardo Scalisse Rm:569114
+Valdemar da Rocha Formiga Neto Rm:573382
+Pietro Schimidt Rm:570632
+Danilo Roque Rm:573831
+
+Link Repositório: https://github.com/PietroRuotolo/global-solution-frontend.git
