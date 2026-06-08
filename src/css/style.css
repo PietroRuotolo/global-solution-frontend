@@ -2,13 +2,15 @@
 :root{
     --cor1: #ee520a;
     --cor2: #181717;
-    --cor3: #f0f0f0;
+    --cor3: #f0f6fc;
     --cor4: #333333;
     --cor5: #7e320f;
     --cor6: #1f1c1c;
     --cor7: #585555;
     --cor8: #24ee1e;
     --cor9: #c70909;
+    --texto-principal: #b9acac;
+    --texto-secundario: #504d4d;
     font-family: 'Cascadia Code', sans-serif;
     --font-family2: 'Orbitron';
 }
@@ -93,6 +95,48 @@ nav ul li{
 a{
     text-decoration: none;
 }
+
+body.tema-claro{
+    background-color: #f0f6fc;
+    --texto-principal:#030303;
+    --texto-secundario: #9c9a9a;
+}
+
+body.tema-escuro{
+    background-color: #1d1b1b;
+    --texto-principal: #ffffff;
+    --texto-secundario: #31363a;
+}
+
+body.tema-espacial{
+    background:
+    linear-gradient(
+        135deg,
+        #020b1f,
+        #0d1b3d
+    );
+
+    --texto-principal: #e3e1e9;
+    --texto-secundario: #335888;
+}
+
+
+#trocar-cor{
+
+    background: transparent; 
+
+    margin-left: 70px;
+
+    color: #f0f0f0;
+
+    border: 1px solid rgba(0,150,255,.4);
+    border-radius: 8px;
+
+    padding: .7rem 1.2rem;
+
+    cursor: pointer;
+}
+    
 
 /* Menu Hamburger */
 .menu-hamburger{
@@ -224,7 +268,7 @@ a{
 }
 
 .card{
-    background-color: var(--cor3);
+    background-color: var(--texto-secundario);
     width: 250px;
     padding: 16px;
     border-radius: 30px;
@@ -245,7 +289,7 @@ a{
 .link-pagina{
     text-decoration: none;
     font-size: 25px;
-    color: var(--cor4);
+    color: var(--texto-principal);
 }
 
 .link-pagina:hover{
@@ -276,7 +320,7 @@ span{
 }
 
 .paragrafos{
-    color: var(--cor4);
+    color: var(--texto-principal);
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 20px;
@@ -385,7 +429,7 @@ span{
 }
 
 #titulo-dashboard{
-    color: var(--cor4);
+    color: var(--texto-principal);
     font-size: 2.2rem;
     margin-bottom: 12px;
 }
@@ -435,7 +479,7 @@ span{
 }
 
 .dashboard-card p{
-    color: var(--cor4);
+    color: var(--texto-principal);
 }
 
 .dashboard-grid{

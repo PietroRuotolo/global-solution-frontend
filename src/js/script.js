@@ -8,7 +8,17 @@ window.onload = function(){
         document.getElementById("inicio").style.display = "none";
     }, 2000);
 }, 2000);
-}
+};
+
+window.addEventListener('DOMContentLoaded', () => {
+
+    const tema = localStorage.getItem('tema');
+
+    if(tema){
+        document.body.classList.add(tema);
+    }
+
+});
 
 // --- LÓGICA DO MENU HAMBURGUER ---
 document.addEventListener("DOMContentLoaded", () => {
@@ -22,6 +32,19 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 });
+
+function trocarTema(tema){
+
+    document.body.classList.remove(
+        'tema-claro',
+        'tema-escuro',
+        'tema-espacial'
+    );
+
+    document.body.classList.add(tema);
+
+    localStorage.setItem('tema', tema);
+}
 
 // --- DOM NO MAIN PARA LISTAR PAGES ---
 const pages = [
