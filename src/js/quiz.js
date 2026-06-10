@@ -1,9 +1,3 @@
-
-// Inicializa o primeiro slide ao carregar a página
-document.addEventListener("DOMContentLoaded", () => {
-    iniciarSlideshow('slides-problema');
-});
-
 const questoes = [
   {
     q: "Onde os microplásticos são encontrados atualmente?",
@@ -125,7 +119,7 @@ function render() {
   const q      = questoes[atual];
   const ultimo = atual === questoes.length - 1;
 
-  qNum.textContent  = "Pergunta " + (atual + 1) + " de " + questoes.length;
+  qNum.textContent  = "Pergunta " + (atual + 1) + " de C" + questoes.length;
   qText.textContent = q.q;
 
   opcsEl.innerHTML = "";
@@ -293,3 +287,13 @@ function resetQuiz() {
 }
 
 render();
+
+const menuIcone = document.getElementById("menu-icone");
+const navMenu = document.querySelector("nav");
+
+if (menuIcone && navMenu) {
+    menuIcone.onclick = () => {
+        navMenu.classList.toggle("active");
+        menuIcone.classList.toggle("open");
+    }
+}

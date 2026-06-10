@@ -4,4 +4,4 @@ Valdemar da Rocha Formiga Neto Rm:573382
 Pietro Schimidt Rm:570632
 Danilo Roque Rm:573831
 
-Link Repositório: https://github.com/PietroRuotolo/global-solution-frontend.git
+Link Repositório: https://github.com/PlasticMap/global-solution-frontend.git
